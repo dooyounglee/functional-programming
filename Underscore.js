@@ -25,6 +25,14 @@ _.map = function(data, iteratee) {
     }
 }
 
+_.filter = function(list, predi) {
+    var new_list = [];
+    _.each(list, function(val) {
+      if (predi(val)) new_list.push(val);
+    });
+    return new_list;
+  }
+
 _.identity = function(v) {
     return v;
 }

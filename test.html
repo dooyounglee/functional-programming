@@ -7,4 +7,6 @@
   pc(4,5);
   var all_sum = _.partial(_.reduce, _, (a,b) => a+b);
   console.log(all_sum([1,2,3]));
+
+  console.log(_.filter([1,2,3,4], a=>a%2))
 </script>
