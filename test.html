@@ -1,0 +1,10 @@
+<script src="Underscore.js"></script>
+<script src="Partial.js"></script>
+<script>
+  console.log(_)
+  var pc = _.partial(console.log,1,2,3);
+  pc();
+  pc(4,5);
+  var all_sum = _.partial(_.reduce, _, (a,b) => a+b);
+  console.log(all_sum([1,2,3]));
+</script>
